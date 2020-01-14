@@ -15,3 +15,10 @@ def about_page(request):
     about_page_title = "Hey, i'm here to tell you about me"
     return render(request, 'home_page.html', {'title': about_page_title})
 
+
+def page_not_found(request, exception):
+    return render(request, '404.html', {'title': 'Sorry, looks like we are lost'})
+
+
+def error_500(request):
+    return render(request, '404.html', )

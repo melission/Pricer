@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf.urls import handler400, handler403, handler404, handler500
 from django.urls import include, path, re_path
 from .views import (
     home_page,
@@ -28,3 +29,8 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
+
+handler400 = 'djPet.views.page_not_found'
+handler403 = 'djPet.views.page_not_found'
+handler404 = 'djPet.views.page_not_found'
+handler500 = 'djPet.views.error_500'
