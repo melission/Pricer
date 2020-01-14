@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">PB</a>
+  <a class="navbar-brand">PB</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
           aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -35,11 +35,18 @@
 
     <title>{% block head_title %}Replace this value{% endblock %} djPet</title>
   </head>
-  <body>
+  <body class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto"></header>
     <h1>{{  title }}</h1>
     {% block content %}
     Replace this value
     {% endblock %}
+  <footer class="mastfoot mt-auto">
+      <div class="inner">
+          <p class="text-center text-muted">some text with <a href="#" class="text-muted"> some link</a> </p>
+      </div>
+  </footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
