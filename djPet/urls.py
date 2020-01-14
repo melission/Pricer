@@ -18,7 +18,7 @@ from django.urls import include, path, re_path
 from .views import (
     home_page,
     contact_page,
-    about_page
+    about_page,
 )
 
 urlpatterns = [

@@ -1,5 +1,5 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.http import HttpResponse, Http404
+from django.shortcuts import render, render_to_response
 
 
 def home_page(request):
@@ -14,3 +14,4 @@ def contact_page(request):
 def about_page(request):
     about_page_title = "Hey, i'm here to tell you about me"
     return render(request, 'home_page.html', {'title': about_page_title})
+
