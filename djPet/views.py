@@ -11,6 +11,10 @@ def contact_page(request):
     return render(request, 'contacts.html', {'title': 'All sort of links'})
 
 
+def pricer_page(request):
+    return render(request, 'pricer.html')
+
+
 def about_page(request):
     about_page_title = "Hey, i'm here to tell you about me"
     return render(request, 'home_page.html', {'title': about_page_title})
@@ -22,3 +26,4 @@ def page_not_found(request, exception):
 
 def error_500(request):
     return render(request, '404.html', )
+
