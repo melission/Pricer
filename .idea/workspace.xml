@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a2f40a-e120-4d9f-b082-fe9df5d542f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pricer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djPet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djPet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pricer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pricer.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +123,12 @@
       <workItem from="1578986190262" duration="15009000" />
       <workItem from="1579503454479" duration="6000" />
       <workItem from="1579702572450" duration="3206000" />
-      <workItem from="1579762730709" duration="18207000" />
+      <workItem from="1579762730709" duration="18242000" />
+      <workItem from="1579848188690" duration="612000" />
+      <workItem from="1580314709604" duration="7000" />
+      <workItem from="1580813092301" duration="6743000" />
+      <workItem from="1580823261194" duration="951000" />
+      <workItem from="1580824303876" duration="6085000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578995668822</created>
@@ -157,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579000777607</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1">
+      <created>1579789283190</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579789283190</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

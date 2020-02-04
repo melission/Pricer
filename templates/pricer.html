@@ -6,108 +6,141 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Attention block</h1>
-    <p class="lead">This is the instruction how to work with this form.
-        Please read carefully.</p>
+    <p class="lead">This is the instruction how to work with this form. Please read carefully.</p>
       <ul class="list-group">
       <li class="list-group-item">1. File you want to download must be an Excel file (.xlx, .xmlx, .cvs) </li>
       <li class="list-group-item">2. You need to fill in numbers of columns which heed to extract</li>
       <li class="list-group-item">3. </li>
       <li class="list-group-item">4. </li>
       <li class="list-group-item">5. </li>
-</ul>
+      </ul>
   </div>
+
 </div>
+{#    <form style="height: 8rem">#}
+{#    <div class="input-group mb-3 col-sm-6 mx-auto">#}
+{#      <div class="input-group-prepend">#}
+{#        <span class="input-group-text " id="inputGroupFileAddon01">Upload</span>#}
+{#      </div>#}
+{#      <div class="custom-file">#}
+{#        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">#}
+{#        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>#}
+{#      </div>#}
+{#    </div>#}
+{#    </form>#}
+
+    <form style="height: 8rem">
+    <div class="form-row mx-auto" style="width: 50%; height: 3rem">
+        <h3 class="lead text-center mx-auto">
+            Upload file here
+        </h3>
+    </div>
+    <div class="form-row mx-auto" style="width: 50%">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+      </div>
+    </div>
+    </form>
+
+
 {#    <div class="container" style="width: 95%">#}
-    <div class="row mx-auto" style="height: 20rem">
+    <form>
+    <div class="row mx-auto" style="height: 18rem">
         <div class="col-md-2">
-            <div class="card" style="height: 12rem"><span class="border border-primary" style="height: 12rem">
+            <div class="card border-primary" style="height: 12rem">
                 <div class="card-body">
                     <h5 class="card-title text-center"> Shop ID</h5>
                     <p> Fill in a number/letter of column with Shop ID</p>
+                </div>
 {#                    <p class="text-center"> Example: A </p>#}
-                    <label for="inputShopID">look i'm here</label>
-                    <input type="text" id="inputShopID" placeholder="Example: A">
+                <div class="card-footer bg-transparent">
+                    <label for="inputShopID"></label>
+                    <input type="text" class="form-control" id="inputShopID" placeholder="Example: A" required>
 {#                    <input type="submit>">#}
-                    <button type="submit">Confirm</button>
-                    </div>
-                </span>
+{#                    <button type="submit">Confirm</button>#}
+                </div>
             </div>
         </div>
         <div class="col-md-2">
-            <div class="card" style="height:12rem"><span class="border border-info" style="height: 12rem">
+            <div class="card border-info" style="height:12rem">
                 <div class="card-body">
                     <h5 class="card-title">Name</h5>
                     <p> Number/letter of full name of a good column</p>
-                    <p></p>
-                    <p> Example: B </p>
                 </div>
-                </span>
+{#                    <p> Example: B </p>#}
+                <div class="card-footer bg-transparent">
+                    <label for="inputName"></label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Example: B" required>
+{#                    <div class="invalid-feedback">#}
+{#                        This field mustn't be emtpy#}
+{#                    </div>#}
+{#                    <botton type="submit">Confirm</botton>#}
+                </div>
             </div>
         </div>
         <div class="col-md-2">
-            <div class="card" style="height: 12rem"><span class="border border-primary" style="height: 12rem">
+            <div class="card border-primary" style="height: 12rem">
                 <div class="card-body">
                     <h5 class="card-title"> Amount</h5>
                     <p> Wrote a number/letter of a column with amount.</p>
-{#                    <p> Example: C </p>#}
-                    <label for="inputAmount">Amount</label>
-                    <input type="text" id="inputAmount" placeholder="Example: C">
-                    <button type="submit">Confirm</button>
                 </div>
-            </span>
+{#                    <p> Example: C </p>#}
+                <div class="card-footer bg-transparent">
+                    <label for="inputAmount"></label>
+                    <input type="text" class="form-control" id="inputAmount" placeholder="Example: C" required>
+{#                    <button type="submit">Confirm</button>#}
+                </div>
             </div>
         </div>
         <div class="col-md-2">
-            <div class="card" style="height: 12rem"><span class="border border-info" style="height: 12rem">
+            <div class="card border-info" style="height: 12rem">
                 <div class="card-body">
                     <h5 class="card-title">Price</h5>
                     <p class="card-text">Write a number/letter of column with purchase price.</p>
 {#                    <p> Example: D </p>#}
-                    <label for="inputPrice"></label>
-                    <input type="text" id="inputPrice" placeholder="Example: D">
-                    <buttom type="submit">Confirm</buttom>
                 </div>
-                </span>
+                <div class="card-footer bg-transparent">
+                    <label for="inputPrice"></label>
+                    <input type="text" class="form-control" id="inputPrice" placeholder="Example: D" required>
+{#                    <buttom type="submit">Confirm</buttom>#}
+                </div>
             </div>
         </div>
         <div class="col-md-2">
-            <div class="card" style="height: 12rem"><span class="border border-primary" style="height: 12rem">
+            <div class="card border-primary" style="height: 12rem">
                 <div class="card-body">
                     <h5 class="card-title">Part Number</h5>
                     <p> Fill in this field with number/letter of column with PN.</p>
-                    <p> Example: E </p>
                 </div>
-                </span>
+{#                    <p> Example: E </p>#}
+                <div class="card-footer bg-transparent">
+                    <label for="inputPN"></label>
+                    <input type="text" class="form-control" id="inputPN" placeholder="Example: E" required>
+{#                    <button type="submit">Confirm</button>#}
+                </div>
             </div>
         </div>
         <div class="col-md-2">
-            <div class="card" style="height: 12rem"><span class="border border-info" style="height: 12rem">
+            <div class="card border-info" style="height: 12rem">
                 <div class="card-body">
                     <h5 class="card-title">Minimal Retail Price</h5>
-                    <p> Write a number/letter of MRC column</p>
-{#                    <p> Example: F </p>#}
-                    <label for="inputMRC">MRC here</label>
-                    <input type="text" id="inputMRC" placeholder="Example: F">
-                    <button type="submit">Confirm</button>
+                    <p class="card-text"> Write a number/letter of MRC column</p>
                 </div>
-                </span>
+{#                    <p> Example: F </p>#}
+                    <div class="card-footer bg-transparent">
+                        <label for="inputMRC"></label>
+                        <input type="text" class="form-control" id="inputMRC" placeholder="Example: F" required>
+{#                    <button type="submit">Confirm</button>#}
+                    </div>
             </div>
         </div>
 {#    </div>#}
     </div>
+        <div class="row-cols-1 mx-auto text-center">
+            <button type="button" class="btn btn-primary btn-lg" style='width: 15%'>Start forming price list</button>
+        </div>
+    </form>
 
 
-
-
-
-
-    <div class="input-group mb-3 col-sm-6 mx-auto">
-  <div class="input-group-prepend">
-    <span class="input-group-text " id="inputGroupFileAddon01">Upload</span>
-  </div>
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-  </div>
-</div>
 {% endblock %}
