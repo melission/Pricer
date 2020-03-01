@@ -29,7 +29,7 @@
 {#    </div>#}
 {#    </form>#}
 
-    <form style="height: 8rem">
+    <form method="get" style="height: 8rem">
     <div class="form-row mx-auto" style="width: 50%; height: 3rem">
         <h3 class="lead text-center mx-auto">
             Upload file here
@@ -45,7 +45,7 @@
 
 
 {#    <div class="container" style="width: 95%">#}
-    <form>
+    <form method="POST" action="."> {% csrf_token %}
     <div class="row mx-auto" style="height: 18rem">
         <div class="col-md-2">
             <div class="card border-primary" style="height: 12rem">
@@ -56,7 +56,7 @@
 {#                    <p class="text-center"> Example: A </p>#}
                 <div class="card-footer bg-transparent">
                     <label for="inputShopID"></label>
-                    <input type="text" class="form-control" id="inputShopID" placeholder="Example: A" required>
+                    <input type="text" class="form-control" name="shopID" id="inputShopID" placeholder="Example: A" required>
 {#                    <input type="submit>">#}
 {#                    <button type="submit">Confirm</button>#}
                 </div>
@@ -71,7 +71,7 @@
 {#                    <p> Example: B </p>#}
                 <div class="card-footer bg-transparent">
                     <label for="inputName"></label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Example: B" required>
+                    <input type="text" class="form-control" name="name" id="inputName" placeholder="Example: B" required>
 {#                    <div class="invalid-feedback">#}
 {#                        This field mustn't be emtpy#}
 {#                    </div>#}
@@ -88,7 +88,7 @@
 {#                    <p> Example: C </p>#}
                 <div class="card-footer bg-transparent">
                     <label for="inputAmount"></label>
-                    <input type="text" class="form-control" id="inputAmount" placeholder="Example: C" required>
+                    <input type="text" class="form-control" name="amount" id="inputAmount" placeholder="Example: C" required>
 {#                    <button type="submit">Confirm</button>#}
                 </div>
             </div>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="card-footer bg-transparent">
                     <label for="inputPrice"></label>
-                    <input type="text" class="form-control" id="inputPrice" placeholder="Example: D" required>
+                    <input type="text" class="form-control" name="price" id="inputPrice" placeholder="Example: D" required>
 {#                    <buttom type="submit">Confirm</buttom>#}
                 </div>
             </div>
@@ -116,7 +116,7 @@
 {#                    <p> Example: E </p>#}
                 <div class="card-footer bg-transparent">
                     <label for="inputPN"></label>
-                    <input type="text" class="form-control" id="inputPN" placeholder="Example: E" required>
+                    <input type="text" class="form-control" name="partNumber" id="inputPN" placeholder="Example: E" required>
 {#                    <button type="submit">Confirm</button>#}
                 </div>
             </div>
@@ -130,7 +130,7 @@
 {#                    <p> Example: F </p>#}
                     <div class="card-footer bg-transparent">
                         <label for="inputMRC"></label>
-                        <input type="text" class="form-control" id="inputMRC" placeholder="Example: F" required>
+                        <input type="text" class="form-control" name="MRP" id="inputMRC" placeholder="Example: F" required>
 {#                    <button type="submit">Confirm</button>#}
                     </div>
             </div>
@@ -138,7 +138,7 @@
 {#    </div>#}
     </div>
         <div class="row-cols-1 mx-auto text-center">
-            <button type="button" class="btn btn-primary btn-lg" style='width: 15%'>Start forming price list</button>
+            <button type="submit" class="btn btn-primary btn-lg" style='width: 15%'>Start forming price list</button>
         </div>
     </form>
 

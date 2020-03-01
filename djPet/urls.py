@@ -21,7 +21,7 @@ from .views import (
     contact_page,
     about_page,
     pricer_page,
-    page_not_found
+    # page_not_found
 )
 
 urlpatterns = [
@@ -33,7 +33,7 @@ urlpatterns = [
     path('pricer/', pricer_page)
 ]
 
-handler400 = 'djPet.views.page_not_found'
-handler403 = 'djPet.views.page_not_found'
-handler404 = 'djPet.views.page_not_found'
-handler500 = 'djPet.views.error_500'
+# handler400 = 'djPet.views.page_not_found'
+# handler403 = 'djPet.views.page_not_found'
+# handler404 = 'djPet.views.page_not_found'
+# handler500 = 'djPet.views.error_500'
