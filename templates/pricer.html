@@ -29,7 +29,7 @@
 {#    </div>#}
 {#    </form>#}
 
-    <form method="get" style="height: 8rem">
+    <form style="height: 8rem">
     <div class="form-row mx-auto" style="width: 50%; height: 3rem">
         <h3 class="lead text-center mx-auto">
             Upload file here
@@ -45,6 +45,10 @@
 
 
 {#    <div class="container" style="width: 95%">#}
+    <div class="form-row mx-auto" style="width: 50%; height: 3rem">
+    <h2 class="lead text-center mx-auto"> Define needed information here</h2>
+    </div>
+
     <form method="POST" action="."> {% csrf_token %}
     <div class="row mx-auto" style="height: 18rem">
         <div class="col-md-2">

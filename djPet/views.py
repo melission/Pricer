@@ -12,16 +12,18 @@ def contact_page(request):
 
 
 def pricer_page(request):
-    # print(request.POST)
+    print('request Post before everything: ', request.POST)
+    # print('request without .POST', request)
     if request.method == 'POST':
+        print('before definition of the form')
         form = PriceChanger(request.POST)
-        print(form)
-        if form.is_valid():
-            print(form.creaned_data)
-            return render(request, 'pricer.html')
-        else:
-            print('Wrong')
-            return render(request, 'pricer.html')
+        # print('Form before isvalid: ', form)
+        # if form.is_valid():
+        #     print(form.cleaned_data)
+        #     return render(request, 'pricer.html')
+        # else:
+        #     print('Wrong')
+        #     return render(request, 'pricer.html')
 
     return render(request, 'pricer.html')
 
