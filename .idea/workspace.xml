@@ -227,10 +227,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="1. input from 'DEFINE NEEDED COLUMNS' now works correctly, return a list of integers which can be used in fileChanger.py&#10;2. Add one docstring, one definition, changed the way how POST request from views.py worked" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1466" y="284" key="CommitChangelistDialog2" timestamp="1583145264613">
+    <state x="1346" y="284" key="CommitChangelistDialog2" timestamp="1584089377740">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1466" y="284" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1583145264613" />
+    <state x="1346" y="284" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1584089377740" />
     <state width="1490" height="169" key="GridCell.Tab.0.bottom" timestamp="1583161082513">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -251,14 +251,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1053" y="343" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1583145025781" />
-    <state x="1144" y="434" key="Vcs.Push.Dialog.v2" timestamp="1583145273288">
+    <state x="1144" y="434" key="Vcs.Push.Dialog.v2" timestamp="1584089335867">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1144" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1583145273288" />
+    <state x="1144" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1584089335867" />
     <state x="1248" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1583828474582">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1248" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1583828474582" />
+    <state x="1089" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584089380626">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1089" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1584089380626" />
     <state x="1240" y="547" width="707" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1583144761593">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
