@@ -1,8 +1,8 @@
 from django import forms
 
 
-def PriceChanger(colunmDict):
-    print('PriceChanger started, ', colunmDict)
+def PriceChanger(colunmDict: dict, file):
+    # print('PriceChanger started, ', colunmDict)
     """ Function takes a dictionary from block 'define needed information' and changing it to a list for
     'fileChanger.py' """
     # integerColunm = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9, 'K': 10, 'L': 11,
@@ -17,11 +17,12 @@ def PriceChanger(colunmDict):
     # partNumber = colunmDict['partNumber']
     # MRP = colunmDict['MRP']
     neededColumns = []
-    print('before for loop')
+    # print('before for loop')
     for value in colunmDict.values():
-        print(value)
+        # print(value)
         if value in integerColunms:
             neededColumns.append(integerColunms.index(value))
-    print(neededColumns)
+    # print(neededColumns)
 
     return neededColumns
+

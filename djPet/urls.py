@@ -21,6 +21,7 @@ from .views import (
     contact_page,
     about_page,
     pricer_page,
+    easter_egg_page
     # page_not_found
 )
 
@@ -30,7 +31,8 @@ urlpatterns = [
     re_path(r'^contacts?/$', contact_page),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    path('pricer/', pricer_page)
+    path('pricer/', pricer_page),
+    path('easter_egg/', easter_egg_page)
 ]
 
 # handler400 = 'djPet.views.page_not_found'
