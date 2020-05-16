@@ -29,27 +29,31 @@
 {#    </div>#}
 {#    </form>#}
 
-    <form method='post' style="height: 8rem">
+{# download file from user's PC #}
+    <form method='post' enctype="multipart/form-data" style="height: 8rem">
     <div class="form-row mx-auto" style="width: 50%; height: 3rem">
+        {% csrf_token %}
         <h3 class="lead text-center mx-auto">
             Upload file here
         </h3>
     </div>
     <div class="form-row mx-auto" style="width: 50%">
-      <div class="custom-file">
-        <input type="file" name="fileWithPrices" class="custom-file-input" id="inputPriceList" aria-describedby="inputPriceList">
-        <label class="custom-file-label" for="inputPriceList">Choose file</label>
-      </div>
+        <div class="custom-file">
+          <label for="id_document">Choose file</label>
+          <input type="file" name="document" class="custom-file-input" id="id_document"
+               aria-describedby="id_document" required>
+        </div>
     </div>
-    </form>
+{#    </form>#}
 
+{# place for download file via URL-link #}
 
 {#    <div class="container" style="width: 95%">#}
     <div class="form-row mx-auto" style="width: 50%; height: 3rem">
     <h2 class="lead text-center mx-auto"> Define needed information here</h2>
     </div>
 
-    <form method="POST" action="."> {% csrf_token %}
+{#    <form method="POST" action="."> {% csrf_token %}#}
     <div class="row mx-auto" style="height: 18rem">
         <div class="col-md-2">
             <div class="card border-primary" style="height: 12rem">
@@ -59,8 +63,8 @@
                 </div>
 {#                    <p class="text-center"> Example: A </p>#}
                 <div class="card-footer bg-transparent">
-                    <label for="inputShopID"></label>
-                    <input type="text" class="form-control" name="shopID" id="inputShopID" placeholder="Example: A" required>
+                    <label for="id_shopID"></label>
+                    <input type="text" class="form-control" name="shopID" id="id_shopID" placeholder="Example: A" required>
 {#                    <input type="submit>">#}
 {#                    <button type="submit">Confirm</button>#}
                 </div>
@@ -69,13 +73,13 @@
         <div class="col-md-2">
             <div class="card border-info" style="height:12rem">
                 <div class="card-body">
-                    <h5 class="card-title">Name</h5>
+                    <h5 class="card-title text-center">Name</h5>
                     <p> Number/letter of full name of a good column</p>
                 </div>
 {#                    <p> Example: B </p>#}
                 <div class="card-footer bg-transparent">
-                    <label for="inputName"></label>
-                    <input type="text" class="form-control" name="name" id="inputName" placeholder="Example: B" required>
+                    <label for="id_name"></label>
+                    <input type="text" class="form-control" name="name" id="id_name" placeholder="Example: B" required>
 {#                    <div class="invalid-feedback">#}
 {#                        This field mustn't be emtpy#}
 {#                    </div>#}

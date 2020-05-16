@@ -20,8 +20,8 @@ from .views import (
     home_page,
     contact_page,
     about_page,
-    pricer_page,
-    easter_egg_page
+    new_pricer_page,
+    easter_egg_page,
     # page_not_found
 )
 
@@ -29,10 +29,10 @@ urlpatterns = [
     path('home/', home_page),
     path('about/', about_page),
     re_path(r'^contacts?/$', contact_page),
-    path('polls/', include('polls.urls')),
+    # path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    path('pricer/', pricer_page),
-    path('easter_egg/', easter_egg_page)
+    path('pricer/', new_pricer_page),
+    path('easter_egg/', easter_egg_page),
 ]
 
 # handler400 = 'djPet.views.page_not_found'

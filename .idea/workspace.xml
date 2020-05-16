@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a2f40a-e120-4d9f-b082-fe9df5d542f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djPet/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/easter_egg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/success_download.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djPet/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djPet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djPet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djPet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djPet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/calculations/pricesCollector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/easter_egg.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/easter_egg.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pricer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pricer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,18 +61,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="C:\Users\melis\pets\djPet\.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectId" id="1WC8sTK3qFmE8hnlz51CAxtOVFj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -74,6 +77,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -143,7 +147,27 @@
       <workItem from="1583249700463" duration="3000" />
       <workItem from="1583746751486" duration="629000" />
       <workItem from="1583827592640" duration="1124000" />
-      <workItem from="1584087848068" duration="1212000" />
+      <workItem from="1584087848068" duration="3044000" />
+      <workItem from="1584343966088" duration="4875000" />
+      <workItem from="1584524368498" duration="700000" />
+      <workItem from="1584533923054" duration="599000" />
+      <workItem from="1584703375058" duration="15000" />
+      <workItem from="1586175503268" duration="75000" />
+      <workItem from="1586508227942" duration="2973000" />
+      <workItem from="1586513228690" duration="4235000" />
+      <workItem from="1586532081932" duration="144000" />
+      <workItem from="1586851472343" duration="1372000" />
+      <workItem from="1587113571404" duration="14368000" />
+      <workItem from="1587374799322" duration="657000" />
+      <workItem from="1587383291594" duration="5065000" />
+      <workItem from="1587454525384" duration="1207000" />
+      <workItem from="1588243007226" duration="1253000" />
+      <workItem from="1588663592444" duration="48000" />
+      <workItem from="1588681497816" duration="10287000" />
+      <workItem from="1588749870428" duration="10956000" />
+      <workItem from="1589193386005" duration="6996000" />
+      <workItem from="1589356213496" duration="5789000" />
+      <workItem from="1589468797580" duration="2011000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578995668822</created>
@@ -201,64 +225,112 @@
       <option name="project" value="LOCAL" />
       <updated>1583145265368</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1. input from 'DEFINE NEEDED COLUMNS' now works correctly, return a list of integers which can be used in fileChanger.py&#10;2. Add one docstring, one definition, changed the way how POST request from views.py worked">
+      <created>1584089312828</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1584089312828</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add .gitignore for both type of files &quot;.pyc&quot; and &quot;__pycache__&quot;">
+      <created>1584089496790</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584089496790</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="Pricer_page (views.py) corrected, input still incorrect" />
     <MESSAGE value="1. input from 'DEFINE NEEDED COLUMNS' now works correctly, return a list of integers which can be used in fileChanger.py&#10;2. Add one docstring, one definition, changed the way how POST request from views.py worked" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. input from 'DEFINE NEEDED COLUMNS' now works correctly, return a list of integers which can be used in fileChanger.py&#10;2. Add one docstring, one definition, changed the way how POST request from views.py worked" />
+    <MESSAGE value="add .gitignore for both type of files &quot;.pyc&quot; and &quot;__pycache__&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .gitignore for both type of files &quot;.pyc&quot; and &quot;__pycache__&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1346" y="284" key="CommitChangelistDialog2" timestamp="1584089377740">
+    <state x="1619" y="403" key="#Inspections" timestamp="1588689181426">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1346" y="284" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1584089377740" />
-    <state width="1490" height="169" key="GridCell.Tab.0.bottom" timestamp="1583161082513">
+    <state x="1619" y="403" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1588689181426" />
+    <state x="1585" y="383" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587374816304">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1490" height="169" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1583161082513" />
-    <state width="1490" height="169" key="GridCell.Tab.0.center" timestamp="1583161082512">
+    <state x="1585" y="383" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587374816304" />
+    <state x="1346" y="284" key="CommitChangelistDialog2" timestamp="1584089494899">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1490" height="169" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1583161082512" />
-    <state width="1490" height="169" key="GridCell.Tab.0.left" timestamp="1583161082512">
+    <state x="1346" y="284" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1584089494899" />
+    <state width="2517" height="383" key="GridCell.Tab.0.bottom" timestamp="1589221373162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1490" height="169" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1583161082512" />
-    <state width="1490" height="169" key="GridCell.Tab.0.right" timestamp="1583161082513">
+    <state width="2517" height="383" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589221373162" />
+    <state width="2517" height="383" key="GridCell.Tab.0.center" timestamp="1589221373162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1490" height="169" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1583161082512" />
+    <state width="2517" height="383" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589221373162" />
+    <state width="2517" height="383" key="GridCell.Tab.0.left" timestamp="1589221373162">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="383" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589221373162" />
+    <state width="2517" height="383" key="GridCell.Tab.0.right" timestamp="1589221373162">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="383" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589221373162" />
+    <state width="2517" height="383" key="GridCell.Tab.1.bottom" timestamp="1589221373162">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="383" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589221373162" />
+    <state width="2517" height="383" key="GridCell.Tab.1.center" timestamp="1589221373162">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="383" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589221373162" />
+    <state width="2517" height="383" key="GridCell.Tab.1.left" timestamp="1589221373162">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="383" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589221373162" />
+    <state width="2517" height="383" key="GridCell.Tab.1.right" timestamp="1589221373162">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="383" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589221373162" />
     <state x="1053" y="343" key="SettingsEditor" timestamp="1583145025781">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1053" y="343" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1583145025781" />
-    <state x="1144" y="434" key="Vcs.Push.Dialog.v2" timestamp="1584089335867">
+    <state x="1144" y="434" key="Vcs.Push.Dialog.v2" timestamp="1584089508129">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1144" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1584089335867" />
-    <state x="1248" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1583828474582">
+    <state x="1144" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1584089508129" />
+    <state x="1248" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1586175504786">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1248" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1583828474582" />
+    <state x="1248" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586175504786" />
     <state x="1089" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584089380626">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
