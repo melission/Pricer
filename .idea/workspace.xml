@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a2f40a-e120-4d9f-b082-fe9df5d542f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/success_download.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djPet/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djPet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djPet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djPet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djPet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/djPet/calculations/pricesCollector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/easter_egg.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/easter_egg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pricer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pricer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +150,7 @@
       <workItem from="1589193386005" duration="6996000" />
       <workItem from="1589356213496" duration="5789000" />
       <workItem from="1589468797580" duration="2011000" />
+      <workItem from="1589621495802" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578995668822</created>
@@ -239,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584089496790</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Input system was totally reworked, now every input value is shows correctly by adding one model and one form, which connected to this model (djPet: forms.py, models.py); - Settings: 1. add media_url, media_path 2. add sessions to middleware 3. templates now has content processor; - .idea now ignored by git; - created new price page (views.py) with new input system instead of old page with input cleared by one definition and few if statement. Also changed urls.py to shows this page correctly. Next step: build a system to work with users files (preference: excels tables) and find a way to work with raws where prices and amounts are str, not nums (see calculations)">
+      <created>1589622757046</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589622757046</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +262,8 @@
     <MESSAGE value="Pricer_page (views.py) corrected, input still incorrect" />
     <MESSAGE value="1. input from 'DEFINE NEEDED COLUMNS' now works correctly, return a list of integers which can be used in fileChanger.py&#10;2. Add one docstring, one definition, changed the way how POST request from views.py worked" />
     <MESSAGE value="add .gitignore for both type of files &quot;.pyc&quot; and &quot;__pycache__&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .gitignore for both type of files &quot;.pyc&quot; and &quot;__pycache__&quot;" />
+    <MESSAGE value="- Input system was totally reworked, now every input value is shows correctly by adding one model and one form, which connected to this model (djPet: forms.py, models.py); - Settings: 1. add media_url, media_path 2. add sessions to middleware 3. templates now has content processor; - .idea now ignored by git; - created new price page (views.py) with new input system instead of old page with input cleared by one definition and few if statement. Also changed urls.py to shows this page correctly. Next step: build a system to work with users files (preference: excels tables) and find a way to work with raws where prices and amounts are str, not nums (see calculations)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Input system was totally reworked, now every input value is shows correctly by adding one model and one form, which connected to this model (djPet: forms.py, models.py); - Settings: 1. add media_url, media_path 2. add sessions to middleware 3. templates now has content processor; - .idea now ignored by git; - created new price page (views.py) with new input system instead of old page with input cleared by one definition and few if statement. Also changed urls.py to shows this page correctly. Next step: build a system to work with users files (preference: excels tables) and find a way to work with raws where prices and amounts are str, not nums (see calculations)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1619" y="403" key="#Inspections" timestamp="1588689181426">
@@ -283,10 +274,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1585" y="383" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587374816304" />
-    <state x="1346" y="284" key="CommitChangelistDialog2" timestamp="1584089494899">
+    <state x="1346" y="284" key="CommitChangelistDialog2" timestamp="1589622756096">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1346" y="284" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1584089494899" />
+    <state x="1346" y="284" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1589622756096" />
     <state width="2517" height="383" key="GridCell.Tab.0.bottom" timestamp="1589221373162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

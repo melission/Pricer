@@ -51,6 +51,7 @@ def contact_page(request):
 #     return render(request, 'pricer.html')
 
 
+
 def new_pricer_page(request):
     template = "pricer.html"
     if request.method == "POST":
