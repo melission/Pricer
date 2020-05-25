@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.core.files import File
 from .forms import PricerForm
 from .calculations import pricesCollector
+from django.core.files.storage import FileSystemStorage
 
 
 
@@ -56,14 +57,21 @@ def new_pricer_page(request):
     template = "pricer.html"
     if request.method == "POST":
         form = PricerForm(request.POST)
-        print(form)
+        uploaded_file = request.FILES['document']
+        # print(form)
+        fs = FileSystemStorage()
+        fs.save(uploaded_file.name, uploaded_file)
+        print(uploaded_file.size)
+        print(uploaded_file.content_type)
         if form.is_valid():
+            print('inside if form is valid')
             cleanedData = form.cleaned_data
             neededColumns = []
             for i in cleanedData.values():
                 neededColumns.append(i)
-            file = File
-            ready_to_use_prices = pricesCollector(neededColumns, file)
+            print(neededColumns)
+            # file = File
+            # ready_to_use_prices = pricesCollector(neededColumns, file)
             # return
         else:
             template = 'pricer.html'
