@@ -14,6 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
+
 from django.conf.urls import handler400, handler403, handler404, handler500
 from django.urls import include, path, re_path
 from .views import (
@@ -34,7 +37,8 @@ urlpatterns = [
     path('pricer/', new_pricer_page),
     path('easter_egg/', easter_egg_page),
 ]
-
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # handler400 = 'djPet.views.page_not_found'
 # handler403 = 'djPet.views.page_not_found'
 # handler404 = 'djPet.views.page_not_found'
