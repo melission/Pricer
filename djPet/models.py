@@ -2,7 +2,7 @@ from django.db import models
 
 
 class pricer(models.Model):
-    document = models.FileField(upload_to='media/')
+    document = models.FileField()
     shopID = models.CharField(max_length=1)
     name = models.CharField(max_length=1)
     amount = models.CharField(max_length=1)

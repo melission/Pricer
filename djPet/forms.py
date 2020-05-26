@@ -37,7 +37,6 @@ class PricerForm(ModelForm):
     class Meta:
         model = pricer
         fields = [
-            'document',
             "shopID",
             'name',
             'amount',
