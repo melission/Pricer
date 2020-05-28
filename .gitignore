@@ -4,4 +4,4 @@
 /.idea/
 /djPet/media/
 djPet/secret_key.txt
-/venv/
+venv/
