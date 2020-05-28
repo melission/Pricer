@@ -3,5 +3,5 @@
 "db.sqlite3" 
 /.idea/
 /djPet/media/
-djPet/security_settings
+djPet/secret_key.txt
 
