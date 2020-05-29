@@ -30,7 +30,7 @@ try:
 except FileNotFoundError:
     key = get_s_key()
     SECRET_KEY = key
-    with open('djPet/secret_key', 'w') as f:
+    with open('djPet/secret_key.txt', 'w') as f:
         f.write(key)
         f.close()
 
