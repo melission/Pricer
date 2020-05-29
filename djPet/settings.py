@@ -29,6 +29,7 @@ try:
         SECRET_KEY = f.read().strip()
 except FileNotFoundError:
     key = get_s_key()
+    SECRET_KEY = key
     with open('djPet/secret_key', 'w') as f:
         f.write(key)
         f.close()
