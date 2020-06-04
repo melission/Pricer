@@ -12,7 +12,7 @@ def calculations(columns: list, file):
     def sorting(row) -> list:
         """First operation on a line from for loop.
         Fuction takes a raw and .append every value that has an index from neededColunm.
-        That list forvard to the next definition"""
+        That list forward to the next definition"""
         # print('sorting row: ', row)
         # row = list(filter(lambda x: x==x, row))
         # print('after folter row: ', row)
@@ -30,7 +30,7 @@ def calculations(columns: list, file):
         # print(row)
         for i in neededColumns:
             returnList.append(row[i])
-        returnList = list(filter(lambda x: x==x, returnList))
+        returnList = list(filter(lambda x: x == x, returnList))
         if len(returnList) == len(neededColumns):
             # print(returnList)
             return mapping(returnList, basedList)
@@ -40,7 +40,7 @@ def calculations(columns: list, file):
         """Second action with a lstRaw.
         Connect every value from sortedList with a basedList to a new Dictionary.
         The reason for this: the values of both price and MRP must be integers, other values can be strings.
-        Next step: if MRP is determinated"""
+        Next step: if MRP is determinate"""
         returnedDict = {}
         for i in range(len(basedList)):
             returnedDict[basedList[i]] = sortedList[i]
@@ -60,8 +60,8 @@ def calculations(columns: list, file):
         return priceCheck(mappedDict)
 
     def toInteger(value):
-        """Function takes a value of price or MRP from PriceCheck fuction and trieng to convery a string to an integer.
-        If variable isnt an integer - return None"""
+        """Function takes a value of price or MRP from PriceCheck function and trying to convert a string to an integer.
+        If variable isn't an integer - return None"""
         # print(value)
         try:
             frstTryValue = int(value)
@@ -181,7 +181,7 @@ def calculations(columns: list, file):
         return nameStrip(mappedDict)
 
     def nameStrip(mappedDict: dict) -> dict:
-        """This function is the last opeation on a dictorany.
+        """This function is the last operation on a dictionary.
         Takes a name from dictionary and clear from spaces.
         Dict returning to a for loop to the line lstRow = sorting(list(df.iloc[row]))"""
         name = mappedDict['name']
